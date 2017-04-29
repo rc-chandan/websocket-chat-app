@@ -9,6 +9,6 @@ Chat client build using node, react and sockets.io
 3. cd into the project dir
 4. instll all the deps using: ```yarn install```
 5. bundle the react client using: ```yarn run build```
-6. start the node server using: ```server.js```
+6. start the node server using: ```yarn start```
 
 visit: http://localhost:3000
