@@ -97,7 +97,8 @@ export default class ChatPage extends React.Component {
 				</div>
 				<div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 					<h2>Messages: </h2>
-					<div>
+					<br />
+					<div className="well">
 						{this.renderMessageList()}
 					</div>
 				</div>
