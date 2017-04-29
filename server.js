@@ -1,18 +1,14 @@
 
-let app = require('express')();
+
+let express = require('express');
+let app = express();
 let http = require('http').Server(app);
 let io = require('socket.io')(http);
 
+app.use('/static', express.static(__dirname + '/client/dist'));
+
 app.get('/', function(req, res){
 	res.sendFile(__dirname + '/client/index.html');
-});
-
-app.get('/style', function(req, res){
-	res.sendFile(__dirname + '/client/style.css');
-});
-
-app.get('/bundle', function(req, res){
-	res.sendFile(__dirname + '/client/dist/bundle.js');
 });
 
 let usersOnline = [];
