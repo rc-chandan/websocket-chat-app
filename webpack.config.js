@@ -16,5 +16,10 @@ module.exports = {
 			      }
 			}
 		]
-  	}
+  	},
+  	resolveLoader: {
+    	modulesDirectories: [
+        	__dirname + '/node_modules'
+    	]
+	}
 }
