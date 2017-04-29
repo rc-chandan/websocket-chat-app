@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --progress --colors --display-error-details",
+    "build": "webpack -p --progress --colors --display-error-details",
     "start": "yarn run build && node server.js"
   },
   "dependencies": {
